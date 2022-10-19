@@ -1,7 +1,5 @@
-<!--how we deal when we have complex objs -->
-<!-- arrays in objs complex objs/for (key in person)-->
-<!-- objs ni iterate cheyali ante for in loop -->
-
+<!-- output of obj we want to display in array -->
+<!-- display obj in arrays/ only keys in array/only values in array/both key values in array -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,43 +10,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>welcome</h3>
     <script>
-const person = {
-    name:"john",
-    age:30,
-    place:"somewhere",
+let mobile = {
+    mobile_name:"redi",
+    price:10000,
+    color:"black"
 }
-for (key in person){
-    console.log(person[key])
-}
-// every key ni point out chesthadi
-// complex object
-const person1 = {
-    name:"john",
-    age:30,
-    place:"somewhere",
-    // above are single properties
-    // below are multiple values arraysand its objects
-    cars:[
-        {name:"Ford", models:["a","b","c"]},
-        {name:"Benz", models:["a","b","c"]},
-        {name:"Honda", models:["a","b","c"]},
-        {name:"Toyota", models:["a","b","c"]}
-    ]
-}
-for (key in person1){
-    // we need to give instance of array
-    if(person1[key] instanceof Array){
-        let arr = person1[key];
-        for(ele of arr);
-        console.log(ele);
-    }
 
-else{
-    console.log(key,person[key]);
-}
-}
+// console.log(mobile);
+let keys = Object.keys(mobile);//only keys mbile_name, price,color
+console.log(keys);
+let values = Object.values(mobile);//values redis black
+console.log(values);
+// in array it will show key and values/ it is called entites means key and values
+let entries = Object.entries(mobile);
+console.log(entries);
     </script>
 </body>
 </html>
