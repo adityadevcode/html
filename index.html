@@ -1,4 +1,3 @@
-<!-- in website we have so much content and user want to go top of page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>check value in an array</h3>
-    <h2>replace values in string</h2>
+    <h3> iterate obj properties, to use all prop forin loop</h3>
     <script>
-        // let nums = [23,34,2,2,55,366,32]
-        // console.log(nums.includes(50));//false
-        // console.log(nums.includes(2));//true
-   let s ="javascript is a front end language";
-   console.log(s)
-  let s2= s.replace('javascript','html');
-   console.log(s2)
-   </script>
+let person ={
+    name:"xyz",
+    age:24,
+    place:"usa"
+}
+for(prop in person){
+console.log(prop,":" ,person[prop])
+}
+</script>
 </body>
 </html>
