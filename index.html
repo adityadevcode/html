@@ -4,19 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>html table</title>
+    <style>
+   table{
+    width:100%;
+    table-layout:fixed;
+   }
+    </style>
 </head>
 <body>
-    <h3> iterate obj properties, to use all prop forin loop</h3>
-    <script>
-let person ={
-    name:"xyz",
-    age:24,
-    place:"usa"
-}
-for(prop in person){
-console.log(prop,":" ,person[prop])
-}
-</script>
+    <h3>html table, automatically set column width </h3>
+    <h4>all column equal width</h4>
+    <br>
+    <table border="4">
+<thead>
+    <th>ID</th>
+    <th>Products</th>
+    <th>Price</th>
+</thead>
+<tbody>
+    <tr>
+        <td>1</td>
+        <td>Apple jjjjf fjjjf</td>
+        <td>1000</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Best fhsf sjsjsj akjdsnnnnnnnnnnnnnnnn sjdsdj</td>
+        <td>2000</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Buy djskdns nnnnnnnnnnnnnnnnsjndsns skndlnc sln</td>
+        <td>4000</td>
+    </tr>
+</tbody>
+    </table>
 </body>
 </html>
