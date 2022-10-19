@@ -1,6 +1,7 @@
-<!-- by default when we are doing changes to images the look and feel should not changed -->
-<!-- we need to img in div/ image width:100/ image height:auto -->
-<!-- img width and height if we declare 100percent it will not perfect so we need to use object-fit:contain -->
+<!-- input feild when we click on passwprd it will show .... -->
+<!-- chrome lo webkit   firefox lo mozz-->
+<!-- hexa decimal colors (6 charcters)-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,23 +10,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-            width:500px;
-            height:700px;
+        input{
+            -webkit-text-security:square;
+            /* -webkit-text-security:circle; */
+            /* same like password */
+            -webkit-text-security:disc; 
         }
-        img{
-            width:100%;
-            height:100%;
-            /* using object-fit img looks perfect */
-            object-fit:contain;
+
+        /* hexa */
+        div{
+            /* background-color:#cacaca; */
+            /* instead of giving six we can give 3 */
+       /* background-color: #ccffaa; */
+       background-color: #cfa;
         }
     </style>
 </head>
 <body>
-    <h3>welcome</h3>
-
+    Account No:<input type="text">
+    <br><br>
+    <input type="password">
+    <!-- hexa colors -->
+    <br>
     <div>
-        <img src="./student-ge89881d39_1280.jpg" alt="">
+        this is div
     </div>
 </body>
 </html>
