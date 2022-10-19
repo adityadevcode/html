@@ -1,4 +1,7 @@
-<!-- search field animation -->
+<!-- to check user has internet or not using js -->
+<!--  shadow and box shadow -->
+<!-- drop shadow -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,91 +9,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-body{
-    background-color: aqua;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
-/* .s-box search box */
-.s-box{
-position: relative;
-height:50px;
-}
-.s-box input{
-    background-color:white;  
-    width:50px;
-    height:50px;
-    border:none;
-    outline:none;
-    font-size: 18px;
-    padding:10px;
-    /* ventane open avakunda */
-    transition:0.4s ease;
-    border-radius:5px 0 0 5px;
-}
-.s-box .btn{
-    cursor:pointer;
-  background-color:rgb(142, 47, 47);  
-  width:50px;
-  height:50px;
-  border:none;
-    outline:none;
-    font-size: 18px;
-    padding:10px;
-    position:absolute;
-    top:0;
-    left:0;
-    /* ikada kuda ivala for animation */
-    transition:0.4s ease;
-    border-radius:0 5px 5px 0;
-}
-
-i{
-    font-size: 18px;
-}
-
-.s-box.active input{
-    width: 200px;
-}
-
-/* button meda click chesinaoudu active avut */
-.s-box.active input{
+    <style>
+div{
     width:200px;
+    height:100px;
+    background-color: rgb(113,113,248);
+    margin:100px;
 }
-/* search icon right side velthundi */
-.s-box.active .btn{
-    transform:translateX(200px);
+.shadow{
+    box-shadow:2px 4px 8px black;
 }
-/* okasari button meda click chesthe open avali and inkoka sari click chesthe close avali */
-</style>
+.drop-shadow{
+    filter:drop-shadow(2px 4px 8px black);
+}
+    </style>
 </head>
 <body>
-    <!-- <h3>search field animation</h3> -->
-    <div class="s-box">
-        <input type="text" placeholder="search...." class="search">
-        <button class="btn">
-        <i class="fas fa-search"></i>
-        </button>
-    </div>
+    <h3> Internet connection user using js</h3>
+    <div></div>
 
-    <!-- when we click on search the width will increase -->
-<!-- for this we need add click event -->
+    <div class="shadow"></div>
+
+    <div class="drop-shadow"></div>
 <script>
-let btn = document.querySelector('.btn');
-let sbox = document.querySelector('.s-box');
-btn.onclick = function(){ //anonymous function
- sbox.classList.toggle('active')
-}
-// active class vunte add avuthundi lekapothe remove avuthadi we use toggle
+    // console message will check
+console.log(navigator.onLine)
+
+// js comma operator left to right side it evaluates calculations and it return last calculations
+ let sum =(a=70,b=10,a+b)
+ console.log(sum);
 </script>
 </body>
 </html>
