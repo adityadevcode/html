@@ -1,7 +1,6 @@
-<!-- how to check style in current website -->
-<!-- inspect/developer tools/styles/right click copy rule  -->
-<!-- input file back ground color purple and text as well -->
-<!-- change the shape of button/change border radius -->
+<!-- by default when we are doing changes to images the look and feel should not changed -->
+<!-- we need to img in div/ image width:100/ image height:auto -->
+<!-- img width and height if we declare 100percent it will not perfect so we need to use object-fit:contain -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,38 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
- .test{
-    font-family: Helvetica,sans-serif;
-    font-weight: 300;
-    border: 1px solid black;
-    border-radius: 17px;
-    width: 200px;
-    padding: 0 20px 0 12px;
-    background-color: light grey;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    height: 34px;
-    font-size: 14px;
-    color:red;
-}
-
-/* button */
-button {
-    /* if we remove border radius then it will normal box shape */
-    border-radius:400px;
-    outline:none;
-    border:none;
-    background:orange;
-    color:white;
-    padding:5px 20px;
-}
+        div{
+            width:500px;
+            height:700px;
+        }
+        img{
+            width:100%;
+            height:100%;
+            /* using object-fit img looks perfect */
+            object-fit:contain;
+        }
     </style>
 </head>
 <body>
-    <div>this is div</div>
-    <br>
-    <input type="text" name="" class="test" placeholder="streaming...">welcome
-    <br><br>
-<!-- button -->
-<button>sumbit</button>
+    <h3>welcome</h3>
+
+    <div>
+        <img src="./student-ge89881d39_1280.jpg" alt="">
+    </div>
 </body>
 </html>
