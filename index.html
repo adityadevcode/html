@@ -1,25 +1,43 @@
-<!-- gather time information from user -->
+<!-- html marked text-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h3>instead of creating manual dropdown we can use input type time</h3>
-<input type="time" name="" id="">
-<!-- date and time -->
-<input type="datetime-local" name="" id="">
-<script>
-    console.group("group1");
-    console.group("group2");
-    console.group("group3");
-console.log("test1");
-console.log("test2");
-console.groupEnd();
-  
-</script>
+    <mark>this is mark text</mark>
+    <div>this is div</div>
+    <!-- style sheet/when we hover on it show full -->
+    <div title="cascading style sheet">css</div>
+    <script>
+        // after assigning obj properties, no more changes to prop
+   let person={
+    name:"john",
+    age:26,
+    person:"india"
+   }
+   console.log(person);
+//    to modify person name
+person.name="krishna";
+console.log(person);
+//no more changing we use obj freeze
+Object.freeze(person);
+person.name="david";
+console.log(person);//krishna
+
+// to empty an array 
+let nums =[8,10,34]
+console.log(nums)
+nums=[]
+console.log(nums);//zero elements
+//another way to empty array
+let number = [1,2,,3,4]
+console.log(number);
+numbers.length=0
+console.log(number);
+   </script>
 </body>
 </html>
