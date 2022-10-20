@@ -1,6 +1,4 @@
-<!-- output of obj we want to display in array -->
-<!-- display obj in arrays/ only keys in array/only values in array/both key values in array -->
-
+<!-- splice vs slice in js/we use in arrays-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,20 +9,30 @@
 </head>
 <body>
     <script>
-let mobile = {
-    mobile_name:"redi",
-    price:10000,
-    color:"black"
-}
+        // splice()-removes and add some elements at some locations
+        // arr =[4,6,8,10]
+        // array.push will add at the end
+        arr =[4,6,8,10]
+        arr.push(100)
+        console.log(arr);
+        // using splice we can at any index
+// splice(index, no of elements, new elements)
+arr1=[2,4,6,7,8]
+arr1.splice(2,1);
+console.log(arr1);//2,4,7,8
+arr1.splice(2,2);
+console.log(arr1);//2,4,
+arr2=[2,4,6,8]
+arr2.splice(3,100,200,3000);
+console.log(arr2);//2,4,6,200,3000
 
-// console.log(mobile);
-let keys = Object.keys(mobile);//only keys mbile_name, price,color
-console.log(keys);
-let values = Object.values(mobile);//values redis black
-console.log(values);
-// in array it will show key and values/ it is called entites means key and values
-let entries = Object.entries(mobile);
-console.log(entries);
+
+
+
+
+// slice()-to get part of an array
+        arr1 =[4,6,8,10]
+
     </script>
 </body>
 </html>
